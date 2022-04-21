@@ -8,7 +8,7 @@
     'region' => 'eu-west-2',
   ]);
 
-  $bucket='cybernix-webappbucket';
+  $bucket='cybernix-pdfbucket';
   $target_local_dir = "../data/";
   $filename = date("Ymds").".pdf";
   $key = basename($filename);
