@@ -5,7 +5,7 @@
   use Aws\S3\Exception\S3Exception;
   $s3 = new Aws\S3\S3Client([
     'version' => 'latest',
-    'region' => 'us-east-1',
+    'region' => 'eu-west-2',
   ]);
 
   $bucket='cybernix-webappbucket';
