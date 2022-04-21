@@ -8,7 +8,7 @@
     'region' => 'us-east-1',
   ]);
 
-  $bucket='s3buckforwpress';
+  $bucket='webappbucket';
   $target_local_dir = "../data/";
   $filename = date("Ymds").".pdf";
   $key = basename($filename);
