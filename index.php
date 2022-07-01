@@ -82,10 +82,10 @@ $ipdat = @json_decode(file_get_contents(
 
       <div class="col-md-6 offset-md-3 mt-5">
               <a target="_blank" href="https://www.trellix.com">
-                <img src='Zscaler-logo.svg' style="width:100px;height:100px;">
+                <img src='zscaler-logo.svg' style="width:100px;height:100px;">
               </a>
               <br>
-              <h1><a target="_blank" href="https://www.trellix.com" class="mt-3 d-flex">Convert Your Files to PDF!</a></h1>
+              <h1><a target="_blank" href="https://www.zscaler.com" class="mt-3 d-flex">Convert Your Files to PDF!</a></h1>
 
               <form accept-charset="UTF-8" action="" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
