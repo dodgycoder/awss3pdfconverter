@@ -116,7 +116,9 @@ $ipdat = @json_decode(file_get_contents(
     $target_file = $target_local_dir . basename($_FILES["fileToUpload"]["name"]);
     $fileTmpLoc = $_FILES["fileToUpload"]["tmp_name"];
     $moveResult = move_uploaded_file($fileTmpLoc, $target_file);
-    $convert="convert \"$target_file\" \"$filepath\"" ;
+    #$convert="convert \"$target_file\" \"$filepath\"" ;
+    $outputFileName=$_POST["filename"];
+    $convert="convert \"$target_file\" \"$target_local_dir$outputFileName\""
     exec($convert,$output,$return);
     
     $result = $s3->putObject([
