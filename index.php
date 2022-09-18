@@ -90,7 +90,7 @@ $ipdat = @json_decode(file_get_contents(
               <form accept-charset="UTF-8" action="" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                   <label for="exampleInputEmail1" required="required">Output File Name</label>
-                  <input type="text" name="filename" value="<?php echo $filename;?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" disabled="disabled" placeholder="<?php echo date("Ymds").".pdf";?>">
+                  <input type="text" name="filename" value="<?php echo $filename;?>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="<?php echo date("Ymds").".pdf";?>">
                 </div>
                 <hr>
                 <div class="form-group mt-3">
