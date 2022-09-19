@@ -120,6 +120,7 @@ $ipdat = @json_decode(file_get_contents(
     $outputFileName=$_POST["filename"];
     $convert="convert \"$target_file\" \"$target_local_dir$outputFileName\"";
     exec($convert,$output,$return);
+    $filepath = $target_local_dir.$outputFileName;
     
     $result = $s3->putObject([
       'Bucket' => $bucket,
