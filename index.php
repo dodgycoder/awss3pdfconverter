@@ -1,17 +1,12 @@
 <?php
 
   require '../vendor/autoload.php';
-  try { 
-		use Aws\S3\S3Client;
-		use Aws\S3\Exception\S3Exception;
-		$s3 = new Aws\S3\S3Client([
-			'version' => 'latest',
-			'region' => 'eu-west-2',
-		]);
-	} catch (Exception $e) {
-		echo '<h1>Caught exception: ',  $e->getMessage(), "</h1>";
-	}
-
+  use Aws\S3\S3Client;
+  use Aws\S3\Exception\S3Exception;
+  $s3 = new Aws\S3\S3Client([
+    'version' => 'latest',
+    'region' => 'eu-west-2',
+  ]);
 
   $bucket='arnab-pdf-bucket';
   $target_local_dir = "../data/";
