@@ -5,13 +5,13 @@
   use Aws\S3\Exception\S3Exception;
   
   try {
-  $s3 = new Aws\S3\S3Client([
-    'version' => 'latest',
-    'region' => 'eu-west-2',
-  ]);
-} catch {
-	echo '<h1>Caught exception: ',  $e->getMessage(), "</h1>";
-}
+		$s3 = new Aws\S3\S3Client([
+			'version' => 'latest',
+			'region' => 'eu-west-2',
+		]);
+	} catch (Exception $e) {
+		echo '<h1>Caught exception: ',  $e->getMessage(), "</h1>";
+	}
 
 
   $bucket='arnab-pdf-bucket';
