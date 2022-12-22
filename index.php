@@ -1,10 +1,9 @@
 <?php
 
   require '../vendor/autoload.php';
-  use Aws\S3\S3Client;
-  use Aws\S3\Exception\S3Exception;
-  
-  try {
+  try { 
+		use Aws\S3\S3Client;
+		use Aws\S3\Exception\S3Exception;
 		$s3 = new Aws\S3\S3Client([
 			'version' => 'latest',
 			'region' => 'eu-west-2',
